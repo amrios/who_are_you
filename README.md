@@ -62,9 +62,19 @@ We will be adding code to automatically generating these metadata files and much
 
 ## amrios notes
 
-everything is WIP
+everything is WIP.
 
-You'll need to following
+You'll need the following:
 * Gentle (https://github.com/lowerquality/gentle)
 * TIMIT (https://catalog.ldc.upenn.edu/LDC93S1)
 * Praat (https://www.fon.hum.uva.nl/praat/)
+
+Some installation notes:
+* Bleeding-edge distros will be problematic. I was able to get _some_ components to work with Ubuntu 20.04 LTS.
+* I have no idea about GPU compatability. I am lucky enough to have a 1080 lying around in storage.
+* Use Anaconda to prevent packages from complaining about dependencies being too new.
+* Paths are hard-coded. I am not intending to fix this. At most, I will document any changes to make.
+* Code is hidden between a mixture of Jupyter Notebook and Python files. Scavenge everywhere if you need information.
+* `adaptive_wavernn` directory isn't ONLY for the adaptive stuff the paper does. It accomplishes the preprocessing, too.
+* Mentions of celebrity in the variables does not mean VoxCeleb (afaik). I am still in process of understanding why they chose celebrities as the var name?
+
