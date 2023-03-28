@@ -59,3 +59,12 @@ Ex:
  ,50880,        60000,      scotland,   LA_E_2039915,   ch_2/LA,    59519,          59999,          f,      d,          d,      ../data/LA_E_2039915.wav,       7
 
 We will be adding code to automatically generating these metadata files and much needed documentation in the near future.
+
+## amrios notes
+
+everything is WIP
+
+You'll need to following
+* Gentle (https://github.com/lowerquality/gentle)
+* TIMIT (https://catalog.ldc.upenn.edu/LDC93S1)
+* Praat (https://www.fon.hum.uva.nl/praat/)
