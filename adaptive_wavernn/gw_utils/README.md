@@ -11,11 +11,15 @@ Kramer repo path:
 
 Probably a TODO is to change those symlinks to something owned by Logan
 
+These are added unorganized notes that will need to be sorted:
+* `celebrity_datadir` IS NOT RELATED TO VOXCELEB OR ANY SIMILAR DATASET. It is the set of samples you want to preprocess that is in the `actual_data` directory
+
 
 The structure of the preprocess (`/guesswho18/code/preprocess`) pipe is as follows:
 * `initialize.py`
 		This was used during our data collection process. It creates a new person directory and gives them id, sentence order, etc...
 		You probably will not use this unless we collect more data
+		AMR: This creates a "template" file for a new person. It will create an empty "demographic.json", empty id_3.dat that is only used to give the person an index, and a sentences.txt that will include the sentences defined in config.py.
 * `build_master.py`
 		This is used to concat individual person files into one master csv. If you run `process.py` this should be ran to update the master csv files
 * `config.py`
